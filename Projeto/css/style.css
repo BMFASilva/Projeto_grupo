@@ -1,0 +1,161 @@
+body{
+  background-color: #717171;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(33, 32, 32);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+.navbar-list a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar-list a:hover {
+  background-color: rgb(97, 97, 97);
+}
+.navbar-signup{
+  text-decoration: underline;
+}
+#boavista-logo{
+  height: 45px;
+  width: 45px;
+}
+.footer{
+  background-color: rgb(31, 31, 31);
+  width: 100%;
+  height: 425px;
+  display: grid;
+  grid-template-columns: 10% 15% 25% 20% 20% 10%;
+  grid-template-rows: 10% 20% 20% 20% 15% 15%; 
+}
+.footer .Contactos{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+.footer iframe{
+  grid-row: 2/6;
+  grid-column: 4/7;
+  padding-left: 25px;
+  width:450px;
+  height:100%; 
+  border: 1px;
+}
+.footer span{
+  grid-row: 3/4;
+  grid-column: 2/3;
+
+}
+.Estadio-titulo{
+  grid-column: 3/5;
+  grid-row: 2/3;
+  font-size: 1.3em;
+  text-decoration: underline;
+  text-align: center;
+}
+
+
+.Jogador_conteiner{
+  padding-top: 80px;
+  height: 650px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 10% 80% 10%;
+}
+.Foto_jogador{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 50% 30% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20% ;
+  text-align: center;
+}
+.Foto_jogador img{
+  grid-column:1/2 ;
+  grid-row: 1/6;
+  width: auto;
+  height: 100%;
+  border: black solid 1px;
+}
+.text_jogador{
+  grid-column: 2/4;
+  grid-row: 1/6;
+  border-left: #000 dotted 2px;
+}
+.text_jogador h1{
+  padding-left: 5px;
+  text-align: left;
+}
+.text_jogador h3{
+  padding-left: 25px;
+  text-align: left;
+}
+
+#Paybtn {
+  cursor: pointer;
+  position: relative;
+  background-color: grey;
+  color: #fff;
+  width: auto;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  transition: all .1s ease-in;
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+.footer .Contactos{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+.footer iframe{
+  grid-row: 2/6;
+  grid-column: 4/7;
+  padding-left: 25px;
+  width: 220px;
+  height: 100%; 
+  border: 1px;
+  }
+  .Resultado{
+    font-size: 2em!important;
+  }
+  .Foto_jogador img{
+    grid-column:1/2 ;
+    grid-row: 1/6;
+    width: 100%;
+    height: auto;
+    border: black solid 1px;
+  }
+  .Jogador_conteiner{
+    padding-top: 80px;
+    height: 550px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+  }
+}
