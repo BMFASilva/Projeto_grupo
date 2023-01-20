@@ -1,0 +1,109 @@
+.main-login{
+    display: grid;
+    padding-top: 50px;
+    height: 650px;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 22.5% 55% 22.5%;
+  }
+  .main-login img{
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    width:100%;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 1/4;
+  
+  }
+  
+  .main-login .Form-login{
+    background-color: grey;
+    border: white 2px solid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 10% 10% 80%;
+  }
+  
+  input[type=text], input[type=password],input[type=email] {
+    width: 97%;
+    padding: 5px;
+    padding-left: 10px;
+    border: none;
+    background: #f1f1f1;
+  }
+  input[type=text]:focus, input[type=password]:focus,input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .Form-login h3{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  
+  .Form-login p{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 1em;
+  }
+  .Form-login form{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    font-size: 1em;
+    display: grid;
+    grid-template-rows: 25% 5% 25% 5% 25% 10%;
+  }
+  .Username_Label{
+    grid-row: 1/2;
+  }
+  .Email_Label{
+    grid-row: 3/4;
+  }
+  .Password_Label{
+    grid-row: 5/6;
+  }
+  .Reg_label{
+    grid-row: 6/7;
+  }
+
+
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+    .Form-login h3{
+        grid-column: 2/4;
+        grid-row: 1/2;
+        text-align: center;
+        font-size: 1em;
+      }
+      
+      .Form-login p{
+        padding-top: 15px;
+        grid-column: 2/4;
+        grid-row: 2/3;
+        text-align: center;
+        font-size: 0.7em;
+      }
+      .Form-login form{
+        padding-top: 25px;
+        grid-column: 2/4;
+        grid-row: 3/4;
+        font-size: 0.7em;
+        display: grid;
+        grid-template-rows: 25% 5% 25% 5% 25% 10%;
+      }
+
+
+}
